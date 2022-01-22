@@ -1,0 +1,9 @@
+<mat-card>
+  current value : {{currentValue}}
+</mat-card>
+<mat-card>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="add" #inputAdd value=0 >
+  </mat-form-field>
+  <button mat-raised-button color="accent" type="button" (click)="submit(inputAdd.value)">Post</button>
+</mat-card>

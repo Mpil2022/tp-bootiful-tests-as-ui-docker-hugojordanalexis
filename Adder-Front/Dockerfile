@@ -7,10 +7,10 @@ FROM node:latest as build
 WORKDIR /app
 
 #Copy the source code to the working directory
-COPY . /app/
+COPY . .
 
 #Install the dependencies
-RUN npm --verbose install
+RUN npm  install
 
 # Genere the build
 RUN npm run build

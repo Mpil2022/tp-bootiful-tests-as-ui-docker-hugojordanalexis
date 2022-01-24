@@ -9,6 +9,8 @@ WORKDIR /usr/local/app/
 #Copy the source code to the working directory
 COPY ./ /usr/local/app
 
+RUN ls /usr/local/app
+
 #Install the dependencies
 RUN npm install
 

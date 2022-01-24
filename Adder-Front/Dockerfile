@@ -4,13 +4,13 @@
 FROM node:latest as build
 
 #Set the working directory
-WORKDIR /app
+WORKDIR /usr/local/app/
 
 #Copy the source code to the working directory
-COPY . .
+COPY ./ /usr/local/app
 
 #Install the dependencies
-RUN npm  install
+RUN npm install
 
 # Genere the build
 RUN npm run build
@@ -21,7 +21,7 @@ RUN npm run build
 FROM nginx:latest
 
 # Copy the build output to replace the default nginx contents
-COPY --from=build app/dist/Adder-Front /usr/share/nginx/html 
+COPY --from=build /usr/local/app/dist/Adder-Front /usr/share/nginx/html 
 
 #Expose port 80
 EXPOSE 80

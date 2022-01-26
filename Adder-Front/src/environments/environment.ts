@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   backend: {
     protocol: 'http',
-    host: 'api-adder',
+    host: 'localhost',
     port: '8080',
     endpoints: {
       add:'/adder',

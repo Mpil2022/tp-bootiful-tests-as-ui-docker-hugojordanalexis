@@ -5,7 +5,8 @@ export const environment = {
     host: 'api-adder',
     port: '8080',
     endpoints: {
-      current: '/current',
+      add:'/adder',
+      current: '/adder/current',
     }
   }
 };

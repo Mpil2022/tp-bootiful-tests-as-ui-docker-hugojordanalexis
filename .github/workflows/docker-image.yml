@@ -9,7 +9,6 @@ on:
 jobs:
 
   build_push:
-
     runs-on: ubuntu-latest
 
     steps:

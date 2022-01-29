@@ -3,7 +3,7 @@
 </mat-card>
 <mat-card>
   <mat-form-field appearance="fill">
-    <input matInput placeholder="add" #inputAdd value=0 >
+    <input matInput placeholder="add" name="addValue" #inputAdd value=0 >
   </mat-form-field>
-  <button mat-raised-button color="accent" type="button" (click)="submit(inputAdd.value)">Post</button>
+  <button mat-raised-button color="accent" name="add" type="button" (click)="submit(inputAdd.value)">Post</button>
 </mat-card>

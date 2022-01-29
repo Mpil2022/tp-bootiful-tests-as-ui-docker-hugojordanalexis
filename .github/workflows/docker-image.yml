@@ -31,4 +31,4 @@ jobs:
         context: .
         file: Adder-Front/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/angular_adder_api:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/angular_front:latest
